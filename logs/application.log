@@ -1,0 +1,19 @@
+2024-07-31 23:12:13 INFO  MyServlet:42 - Entered get Method
+2024-07-31 23:12:13 INFO  MyServlet:57 - Postgresql driver loaded successfuly
+2024-07-31 23:12:13 INFO  MyServlet:69 - Name is ISHIMWE Thierry Henry and Id is 1
+2024-07-31 23:12:40 INFO  MyServlet:73 - Id entered does not exist
+2024-07-31 23:12:58 INFO  MyServlet:92 - Entered Post Method
+2024-07-31 23:12:59 INFO  MyServlet:115 - Data inserted successfully in the database
+2024-07-31 23:13:22 INFO  MyServlet:42 - Entered get Method
+2024-07-31 23:13:22 INFO  MyServlet:57 - Postgresql driver loaded successfuly
+2024-07-31 23:13:22 INFO  MyServlet:73 - Id entered does not exist
+2024-07-31 23:13:33 INFO  MyServlet:42 - Entered get Method
+2024-07-31 23:13:33 ERROR MyServlet:46 - Id entered does not exist
+2024-07-31 23:13:47 INFO  MyServlet:92 - Entered Post Method
+2024-07-31 23:13:47 WARN  MyServlet:96 - Entered an invalid id
+2024-07-31 23:14:04 INFO  MyServlet:92 - Entered Post Method
+2024-07-31 23:14:04 ERROR MyServlet:124 - SQL exceptions caought : connection to database failed: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "students_pkey"
+  Detail: Key (id)=(1) already exists.
+2024-07-31 23:19:22 INFO  MyServlet:57 - Postgresql driver loaded successfuly
+2024-07-31 23:20:22 INFO  MyServlet:73 - Id entered does not exist
+2024-07-31 23:23:33 INFO  MyServlet:42 - Entered get Method  
