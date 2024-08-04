@@ -37,39 +37,51 @@ Logging levels are a way to categorize the significance and type of log messages
 Logging levels determine the severity and importance of the messages logged. Understanding these levels is crucial for filtering logs based on relevance. Common logging levels include:
 
 a. TRACE:
+
 The TRACE level is the most detailed and granular level of logging. It captures every step and minor event in the application's workflow, making it useful for understanding complex processes and diagnosing intricate issues. However, due to its verbosity, TRACE logging can produce a large volume of data and is typically used sparingly.
 
 Purpose: Provides detailed information for diagnosing specific issues. It's the most fine-grained level, often used for tracing program execution.
+
 Example: logger.trace("Entering method calculateTotal")
 
 b. DEBUG:
+
 DEBUG logs are used to provide detailed information for debugging purposes. These logs are typically enabled in development and testing environments, where developers need insights into the application's internal state, variable values, and execution flow. DEBUG logs are usually disabled in production due to their detailed nature and potential performance impact.
 
 Purpose: Used for debugging and provides insight into the program's execution. More detailed than INFO but less so than TRACE.
+
 Example: logger.debug("User input received: " + userInput)
 
 c. INFO:
+
 INFO level logs provide general information about the application's operation. They are used to record significant events in the normal flow of an application, such as starting or stopping a service, user logins, or completion of a background task. INFO logs are useful for understanding the application's behavior in production without being too verbose.
 
 Purpose: General information about the application's operation. It’s used to log the general flow of the application.
+
 Example: logger.info("User successfully logged in")
 
 d. WARN:
+
 WARN logs indicate potentially harmful situations that do not immediately disrupt the application's operation. They highlight issues that could lead to problems if not addressed, such as deprecated API usage or configuration discrepancies. Monitoring WARN logs helps in identifying and resolving issues before they escalate.
 
 Purpose: Indicates potentially harmful situations. Warnings are not errors but suggest that there might be issues.
+
 Example: logger.warn("Configuration file not found, using defaults")
 
 e. ERROR:
+
 ERROR logs capture events that indicate a problem that affects the application's functionality. These logs often record exceptions or errors that prevent certain operations from completing successfully. ERROR logs are crucial for identifying issues that need immediate attention and resolution.
 
 Purpose: Error events that might still allow the application to continue running. These logs indicate issues that need to be addressed.
+
 Example: logger.error("Failed to connect to database", e)
 
 f. FATAL:
+
 The FATAL level is used for severe errors that cause the application to abort or crash. FATAL logs are rare and indicate critical failures that require immediate intervention. These logs help in understanding the causes of catastrophic issues and are typically the highest priority in log monitoring.
 
 Purpose: Severe error events that will likely lead the application to abort. These are critical issues that require immediate attention.
+
 Example: logger.fatal("System out of memory")
 
 In conclusion, logging is a fundamental aspect of software development and maintenance, offering numerous benefits, from debugging and monitoring to security and business analytics. Understanding and appropriately utilizing logging levels can enhance the efficiency of this process, ensuring that relevant information is captured and used effectively.
